@@ -1,0 +1,350 @@
+/* 首页专有的模块 */
+.main {
+  width: 980px;
+  height: 455px;
+  /* 这里不能用浮动做，一浮动下面的footer也会乱 */
+  margin: 10px 0 12px 220px;
+}
+/* 轮播图模块 */
+.main .focus {
+  position: relative;
+  float: left;
+  width: 721px;
+  height: 455px;
+  overflow: hidden;
+}
+.main .focus a {
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 50px;
+  background-color: #21212191;
+}
+.main .focus .left {
+  display: none;
+  left: 0;
+  border-radius: 0 25px 25px 0;
+  padding-left: 4px;
+}
+.main .focus .right {
+  display: none;
+  padding-left: 7px;
+  right: 0;
+  border-radius: 25px 0 0 25px;
+}
+.main .focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800%;
+}
+.main .focus ul li {
+  float: left;
+}
+.main .focus ol {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+.main .focus ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: #fff 1px solid;
+}
+.main .focus ol .current {
+  background-color: #fff;
+}
+/* 新闻快报模块 */
+.main .newsflash {
+  float: right;
+  width: 250px;
+  height: 455px;
+}
+.news {
+  height: 165px;
+  border: 1px solid #ccc;
+}
+/* 新闻头部 */
+.news .news_hd {
+  height: 33px;
+  line-height: 38px;
+  border-bottom: 1px dotted #ccc;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.news .news_hd h5 {
+  float: left;
+  font-weight: 400;
+}
+.news .news_hd a {
+  float: right;
+  line-height: 33px;
+}
+/* 新闻主体 */
+.news .news_bd ul {
+  margin-top: 5px;
+}
+.news .news_bd ul li {
+  height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 24px;
+  margin-left: 15px;
+}
+/* 生活服务 */
+.lifeservice {
+  height: 209px;
+  border-left: solid 1px #ccc;
+}
+.lifeservice ul li {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 70px;
+  text-align: center;
+  padding-top: 12px;
+  /* margin-left: -1px; */
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lifeservice ul li i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.lifeservice ul li:nth-child(1) i {
+  background: url(../images/icons.png) no-repeat -17px -16px;
+  width: 24px;
+  height: 24px;
+}
+.lifeservice ul li:nth-child(2) i {
+  background: url(../images/icons.png) no-repeat -78px -16px;
+  width: 26px;
+  height: 24px;
+}
+.lifeservice ul li:nth-child(3) i {
+  background: url(../images/icons.png) no-repeat -141px -16px;
+  width: 24px;
+  height: 24px;
+}
+.lifeservice ul li:nth-child(4) i {
+  background: url(../images/icons.png) no-repeat -206px -16px;
+  width: 26px;
+  height: 24px;
+}
+.lifeservice ul li:nth-child(5) i {
+  background: url(../images/icons.png) no-repeat -17px -88px;
+  width: 24px;
+  height: 23px;
+}
+.lifeservice ul li:nth-child(6) i {
+  background: url(../images/icons.png) no-repeat -78px -88px;
+  width: 26px;
+  height: 23px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+  background: url(../images/icons.png) no-repeat -141px -88px;
+  width: 24px;
+  height: 23px;
+}
+.lifeservice ul li:nth-child(8) i {
+  background: url(../images/icons.png) no-repeat -206px -88px;
+  width: 26px;
+  height: 23px;
+}
+.lifeservice ul li:nth-child(9) i {
+  background: url(../images/icons.png) no-repeat -17px -159px;
+  width: 24px;
+  height: 27px;
+}
+.lifeservice ul li:nth-child(10) i {
+  background: url(../images/icons.png) no-repeat -78px -159px;
+  width: 26px;
+  height: 27px;
+}
+.lifeservice ul li:nth-child(11) i {
+  background: url(../images/icons.png) no-repeat -141px -159px;
+  width: 24px;
+  height: 18px;
+}
+.lifeservice ul li:nth-child(12) i {
+  background: url(../images/icons.png) no-repeat -206px -159px;
+  width: 26px;
+  height: 27px;
+}
+.lifeservice ul li p {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  text-align: center;
+}
+/* 特价商品 */
+.bargain {
+  margin-top: 5px;
+}
+/* 推荐模块  recom */
+.recom {
+  height: 163px;
+  margin: 12px 0 0 0;
+}
+.recom .recom_hd {
+  height: 100%;
+  width: 205px;
+  background: #5c5251;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.recom .recom_hd img {
+  margin: 28px 0 15px 0;
+}
+.recom .recom_bd ul li {
+  position: relative;
+  float: left;
+}
+.recom .recom_bd ul li:nth-child(-n + 3):after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  right: 0;
+  top: 10px;
+  height: 145px;
+  background-color: #ddd;
+}
+/* 猜你喜欢 */
+.liked .liked_hd {
+  height: 27px;
+  margin-top: 20px;
+}
+.liked .liked_hd a::after {
+  margin: 0 15px;
+  content: "";
+  font-family: "icomoon";
+}
+.liked .liked_bd {
+  height: 230px;
+  border: #ccc 1px solid;
+}
+.liked .liked_bd ul li {
+  float: left;
+  position: relative;
+  width: 199px;
+  text-align: center;
+}
+.liked .liked_bd ul li:nth-child(-n + 5)::after {
+  content: "";
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 2px;
+  height: 60px;
+  background-color: #ddd;
+}
+.liked .liked_bd ul li p {
+  margin: 0 13px;
+}
+.liked .liked_bd ul li i {
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 5px;
+  color: #c81623;
+}
+/* 楼层区的制作 */
+/* 一楼家用电器 */
+.floor1 .box_hd {
+  height: 30px;
+  border-bottom: #c81623 2px solid;
+  margin-top: 30px;
+}
+.floor1 .box_hd h3 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #c81623;
+}
+.floor1 .box_hd ul {
+  float: right;
+}
+.floor1 .box_hd ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+.floor1 .box_hd ul li a {
+  padding: 0 15px;
+}
+.floor1 .box_bd {
+  height: 361px;
+}
+.floor1 {
+  margin-bottom: 50px;
+}
+/* 身体 */
+.tab_list_item ul li {
+  float: left;
+  height: 361px;
+  text-align: center;
+}
+.tab_list_item > ul > li:nth-child(-n + 5) {
+  border-bottom: #ccc solid 1px;
+  border-right: #ccc solid 1px;
+}
+.col_210 {
+  width: 210px;
+  background-color: #f9f9f9;
+}
+.tab_list_item .col_210 ul li {
+  float: left;
+  width: 85px;
+  height: 34px;
+  margin: 0 6px;
+  line-height: 34px;
+  border-bottom: 1px solid #ccc;
+}
+.tab_list_item a img {
+  margin-top: 20px;
+}
+.col_329 {
+  width: 329px;
+}
+.col_221 {
+  width: 221px;
+}
+.col_219 {
+  width: 219px;
+}
+.bb {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+}
+.box_bd .tab_content .tab_list_item .col_329 a .qing {
+  margin-top: 0;
+}
+/* 电梯导航 */
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  /* margin-left: -676px; */
+  width: 66px;
+  background-color: #fff;
+  display: none;
+}
+.fixedtool li {
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+.current {
+  background-color: #c81623;
+  color: #fff;
+}

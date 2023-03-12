@@ -1,0 +1,302 @@
+/* 声明字体    这里一定要注意路径的更换 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?of0ipc");
+  src: url("../fonts/icomoon.eot?of0ipc#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?of0ipc") format("truetype"),
+    url("../fonts/icomoon.woff?of0ipc") format("woff"),
+    url("../fonts/icomoon.svg?of0ipc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 红色字 */
+.style_red {
+  color: #c81623;
+}
+/* 快捷导航模块  开始 */
+.shortcut {
+  height: 31px;
+  background-color: #f1f1f1;
+  /* shortcut 里面的盒子的字都要垂直居中，直接给父级加就可以了 */
+  line-height: 31px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 选中快捷导航中所有的li */
+.shortcut ul li {
+  float: left;
+}
+/* 选中右侧偶数的li */
+.shortcut .fr ul li:nth-child(2n) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  /* 表示上边距 左右边距 下边距 */
+  margin: 9px 15px 0;
+}
+/* 小三角 */
+.arrow-icon::after {
+  content: "";
+  /* 字体声明 */
+  font-family: "icomoon";
+  margin-left: 6px;
+}
+/* 快捷导航模块  结束 */
+/* 头部 开始 */
+.header {
+  position: relative;
+  height: 105px;
+  /* background-color: pink; */
+}
+/* logo 模块 */
+.logo {
+  position: absolute;
+  top: 25px;
+  width: 171px;
+  height: 61px;
+  /* background-color: blue; */
+}
+.logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  /* 隐藏文字 ：京东做法*/
+  /* font-size: 0; */
+  /* 隐藏文字：淘宝做法 */
+  text-indent: -99999px;
+  overflow: hidden;
+  background: url(../images/logo.png) no-repeat center center;
+}
+/* 搜索模块 */
+.search {
+  position: absolute;
+  top: 25px;
+  left: 346px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #b1191a;
+}
+/* 搜索框 和按钮 */
+.search input {
+  float: left;
+  height: 32px;
+  width: 454px;
+  /* 把搜索框的提示文本挤过去 */
+  padding-left: 10px;
+}
+.search button {
+  float: left;
+  width: 80px;
+  height: 32px;
+  background-color: #b1191a;
+  color: #fff;
+  font-size: 16px;
+}
+/* 热点词 hotwords */
+.hotwords {
+  position: absolute;
+  content: "";
+  top: 66px;
+  left: 346px;
+}
+.hotwords ul li {
+  float: left;
+  margin: 0 10px;
+}
+/* 购物车模块 */
+.shopcar {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #bfbfbf;
+}
+.shopcar::before {
+  content: "";
+  font-family: "icomoon";
+  margin-right: 5px;
+  color: #b1191a;
+}
+.shopcar::after {
+  content: "";
+  font-family: "icomoon";
+  margin-left: 10px;
+}
+/* 数量 */
+.count {
+  position: absolute;
+  top: -5px;
+  /* 细节：个位数的时侯看着正常，如果式9999999就会跑到左边去了，这样就会避免这个问题 */
+  left: 105px;
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  background-color: #c81623;
+  padding: 0 5px;
+  border-radius: 7px 7px 7px 0;
+}
+/* 导航模块 */
+.nav {
+  height: 47px;
+  border-bottom: #b1191a 3px solid;
+}
+.dropdown {
+  /* float: left; */
+  width: 210px;
+  height: 45px;
+}
+/* 下拉列表的表头 */
+.dropdown .dt {
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  background-color: #b1191a;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+/* 下拉列表  详细 */
+.dropdown .dd {
+  /* display: none; */
+  width: 210px;
+  height: 465px;
+  background-color: #c81623;
+  margin-top: 2px;
+}
+.dropdown .dd ul li {
+  position: relative;
+  height: 35px;
+  margin-left: 2px;
+  padding-left: 10px;
+  line-height: 35px;
+  transition: all 0.3s;
+  color: #fff;
+}
+.dropdown .dd ul li:hover {
+  background-color: #fff;
+  color: #c81623;
+}
+.dropdown .dd ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.dropdown .dd ul li::after {
+  position: absolute;
+  right: 5px;
+  content: "";
+  font-family: "icomoon";
+  font-size: 10px;
+  color: #fff;
+}
+.dropdown .dd ul li:hover a {
+  color: #c81623;
+}
+/* 导航栏右边 */
+.navitems {
+  height: 47px;
+}
+.navitems ul li {
+  float: left;
+}
+.navitems ul li a {
+  display: inline;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 25px;
+  font-size: 16px;
+}
+/* 4、底部  footer  */
+.footer {
+  height: 415px;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+}
+/* 上半部分 */
+.mod_service {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+.mod_service ul li {
+  float: left;
+  width: 300px;
+  height: 50px;
+  padding-left: 35px;
+}
+.mod_service ul h5 {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+
+  font-size: 0;
+}
+.mod_service ul .service1 {
+  background: url(../images/icons.png) no-repeat -253px -3px;
+}
+.mod_service ul .service2 {
+  background: url(../images/icons.png) no-repeat -255px -54px;
+}
+.mod_service ul .service3 {
+  background: url(../images/icons.png) no-repeat -257px -106px;
+}
+.mod_service ul .service4 {
+  background: url(../images/icons.png) no-repeat -258px -157px;
+}
+.mod_service ul li div h4 {
+  font-size: 14px;
+  font-weight: 900;
+}
+.mod_service ul li div p {
+  font-size: 12px;
+}
+/* 中间部分 */
+.mod_help {
+  height: 185px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 50px;
+}
+.mod_help dl {
+  float: left;
+  width: 200px;
+  margin-top: 20px;
+}
+.mod_help dl:last-child {
+  width: 90px;
+  text-align: center;
+}
+.mod_help dl dt {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.mod_help dl dd {
+  font-size: 12px;
+}
+/* 下半部分：版权信息 */
+.mod_copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+.mod_copyright .links {
+  margin-bottom: 15px;
+}
+.mod_copyright .copyright {
+  line-height: 20px;
+}
+.mod_copyright .links a {
+  display: inline;
+  padding: 0 3px;
+}
